@@ -18,17 +18,19 @@ class Login extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const admin = { username: "cpclark360", password: "admin" };
+    const admin = { username: "cpclark360", password: "Zxczxc1337" };
     
 
     if (
       this.state.adminInfo.username === admin.username &&
-      this.state.adminInfo.password === admin.password
-    ) {
+      this.state.adminInfo.password === admin.password){
       this.props.history.push(`/showcontacts`);
+    } else {
+      // console.log(this.state.adminInfo);
+      console.log(this.state.adminInfo.password ,this.state.adminInfo.username);
     }
 
-    console.log(this.state.adminInfo);
+    
   };
 
   render() {
