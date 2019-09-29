@@ -476,6 +476,7 @@ Skills Section
 
 .contact-container {
   display: flex;
+ 
   padding: 1rem;
   background-color: lightgrey;
 
@@ -489,11 +490,16 @@ Skills Section
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
-  width: 22.5rem;
+  width: 19rem;
+  height: 28rem;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn  {
+  width:5rem;
+  margin-left: 35%;
 }
 
 /*  Media Queries for Mobile devices*/
@@ -672,10 +678,13 @@ Skills Section
 
 /* contactList */
 
-.contact-container {
+.showcontact-container {
   width: 15rem;
   height: 20rem
 }
+
+
+/* Boot Strap styles */
 
 textarea {
   height:5rem;
@@ -683,4 +692,9 @@ textarea {
 
 .contactTitle {
   font-weight: bold;
+}
+
+.form-control {
+  width: 16.5rem;
+  
 }

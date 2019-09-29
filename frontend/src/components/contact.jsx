@@ -96,7 +96,7 @@ class Contact extends Component {
                   
                   required
                 /> */}
-                <label htmlFor="userFirstName">First name</label>
+                <label htmlFor="userFirstName"></label>
                 <input
                   autoFocus
                   type="text"
@@ -111,7 +111,7 @@ class Contact extends Component {
                 />
               </div>
               <div className="col-md-6 mb-3">
-                <label htmlFor="userLastName">Last name</label>
+                <label htmlFor="userLastName"></label>
                 <input
                   type="text"
                   className="form-control"
@@ -126,7 +126,7 @@ class Contact extends Component {
               </div>
               <div className="form-row">
                 <div className="col-auto mb-3">
-                  <label htmlFor="userEmail">E-mail</label>
+                  <label htmlFor="userEmail"></label>
                   <div className="input-group">
                     <div className="input-group-prepend">
                       <span
@@ -154,7 +154,7 @@ class Contact extends Component {
             </div>
 
             <div className="form-group">
-              <label htmlFor="userMessage">Message</label>
+              <label htmlFor="userMessage"></label>
               <textarea
                 className="form-control"
                 value={contactInfo.message}
@@ -163,6 +163,7 @@ class Contact extends Component {
                 // ref={this.userMessage}
                 id="userMessage"
                 rows="3"
+                placeholder="Enter Messages Here"
               />
             </div>
             <button className="btn btn-info" type="submit">
