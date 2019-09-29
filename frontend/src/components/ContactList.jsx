@@ -26,11 +26,15 @@ const handleContactDelete = (id) => {
   return (
     <div className="showcontact-container">
       <div className="desc">
-       <p><span className="contactTitle">Date: </span>{contact.updated_date}</p>
-      <p><span className="contactTitle">First Name: </span>{contact.firstName}</p>
-      <p><span className="contactTitle">Last Name: </span>{contact.lastName}</p>
-        <p><span className="contactTitle">Email: </span> {contact.email}</p>
-        <p className="message"><span className="contactTitle">message: </span> {contact.message}</p>
+      <div className="sectionshow">Date Submitted</div>
+       <p><span className="contactTitle"></span>{contact.updated_date}</p>
+       <div className="sectionshow">Full Name</div>
+      <p><span className="contactTitle"></span>{contact.firstName+ " "}<span>{contact.lastName}</span></p>
+      
+      <div className="sectionshow">E-mail</div>
+        <p><span className="contactTitle"></span> {contact.email}</p>
+        <div className="sectionshow">Message</div>
+        <p className="message"><span className="contactTitle"></span> {contact.message}</p>
       </div>
       <button className="contact-button" onClick={handleContactDelete.bind(this, contact._id)}>Delete</button>
     </div>

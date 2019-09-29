@@ -83,6 +83,7 @@ class Contact extends Component {
       <main id="main">
         <div className="contact-container">
           <form onSubmit={this.handleSubmit}>
+          <div className="section">Contact Me</div>
             <div className="form-row">
               <div className="col-md-6 mb-3">
               {/* <input
