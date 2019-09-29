@@ -13,7 +13,8 @@
 6 - About Styles
 7 - Skills Section 
 8 - Contact Styles
-9 - Portfolio Project Overlay  */
+9 - Portfolio Project Overlay 
+10 - showContacts */
 
 /* 1 -  Layout */
 
@@ -651,4 +652,35 @@ Skills Section
   .footer-container {
     min-width: 640px;
   }
+}
+
+
+
+/* showContacts.jsx */
+
+.containerShow {
+  overflow: scroll;
+  height: auto;
+  
+}
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* contactList */
+
+.contact-container {
+  width: 15rem;
+  height: 20rem
+}
+
+textarea {
+  height:5rem;
+}
+
+.contactTitle {
+  font-weight: bold;
 }

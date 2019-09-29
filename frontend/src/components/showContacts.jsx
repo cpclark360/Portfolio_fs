@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "../login.css";
+
+import "../App.css";
 import "normalize.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -39,11 +40,11 @@ class ShowContacts extends Component {
     contactList = contacts.map((contact, k) =>  <ContactList contact={contact} key={k} />);}
     
 
-    return ( <main id="main">
+    return ( 
       <section className="containerShow">
       <div className="list">{contactList}</div>
       </section>
-    </main>
+    
     );
   }
 }

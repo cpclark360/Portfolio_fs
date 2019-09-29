@@ -13,6 +13,14 @@ class Contact extends Component {
     }
   };
 
+
+
+
+
+
+
+
+
   // focus on usernameFirst
   // componentDidMount() {
   //   this.usernameFirst.current.focus();
@@ -58,6 +66,7 @@ class Contact extends Component {
           this.state.contactInfo.firstName
         );
       });
+      alert('Contact request successfully submitted.')
   };
 
   handleChangeContact = e => {
@@ -76,7 +85,7 @@ class Contact extends Component {
           <form onSubmit={this.handleSubmit}>
             <div className="form-row">
               <div className="col-md-6 mb-3">
-              <input
+              {/* <input
                   type="date"
                   className="form-control"
                   value={contactInfo.date}
@@ -86,7 +95,7 @@ class Contact extends Component {
                   id="userLastName"
                   
                   required
-                />
+                /> */}
                 <label htmlFor="userFirstName">First name</label>
                 <input
                   autoFocus
